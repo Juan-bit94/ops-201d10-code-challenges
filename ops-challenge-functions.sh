@@ -8,12 +8,16 @@
 # Declaration of variables 
 
 # Declaration of functions
+
+# This function uses the echo and last command utility to print the login hostory of the current machine.
 function login_histroy () {
     echo This is the login history:
     echo
-    last
+    last 
 }
 # Main
+
+# this function call prints out the list of all logins 
 login_histroy
 login_histroy
 login_histroy
