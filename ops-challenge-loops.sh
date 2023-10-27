@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Script Name:				ops-challenge-loops
-# Author:				    Juan Maldonado
-# Date of latest revision:	10/25/2023
-# Purpose:				    ops-challenge-loops code assignment 
+# Script Name:					ops-challenge-loops
+# Author:				        Juan Maldonado
+# Date of latest revision:			10/27/2023
+# Purpose:				    	ops-challenge-loops code assignment 
 
 # Declaration of variables
 
