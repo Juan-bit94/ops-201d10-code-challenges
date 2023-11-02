@@ -1,11 +1,11 @@
-# Script Name:				ops-challenge-Log-Retrieval
-# Author:					Juan Maldonado
+# Script Name:				      ops-challenge-Log-Retrieval
+# Author:					          Juan Maldonado
 # Date of lastest revision: 11/2/2023
-# Purpose:					ops-challenge-conditionals-code assignment
+# Purpose:					        ops-challenge-conditionals-code assignment
 
 # Declaration of variables
 
-# 
+# The path for the files the information is going to.
 $last24Path = "C:\Users\Administrator02\Desktop\logs\24log.txt.txt"
 $errorsPath = "C:\Users\Administrator02\Desktop\logs\errorlog.txt.txt"
 
