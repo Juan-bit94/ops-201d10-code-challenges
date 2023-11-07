@@ -1,4 +1,10 @@
-﻿# This Enables File and Printer Sharing 
+# Script Name:              Windows-10-Endpoint-script
+# Author:                   juan maldonado
+# Date of latest revision:  11/07/2023
+# Purpose:                  Ops challenge - Endpoint configuration
+
+
+ # This Enables File and Printer Sharing 
 Enable-NetFirewallRule -Name "FPS-SMB-In-TCP"
 
 # This allow ICMP traffic 
