@@ -1,4 +1,9 @@
-﻿# Declare variable
+# Script Name:              Windows-10-IP-script
+# Author:                   juan maldonado
+# Date of latest revision:  11/07/2023
+# Purpose:                  Ops challenge - Endpoint configuration
+ 
+ # Declare variable
 
 # intro message
 $introMessage = "Welcome to the IP analyzer."
@@ -28,7 +33,6 @@ function Get-IPv4AddressFromFile($fileName) {
 # Main 
 
 Write-Host $introMessage
-# $fileName = Get-FileName
 save-IpConfigToFile
 $ipv4Addresses = Get-IPv4AddressFromFile $fileName
 
