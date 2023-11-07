@@ -39,6 +39,6 @@ $ipv4Addresses = Get-IPv4AddressFromFile $fileName
 if ($ipv4Addresses.Count -eq 0) {
     Write-Host "No IPv4 addresses found in $fileName."
 } else {
-    Write-Host "IPv4 addresses found in $fileName : "
+    Write-Host "IPv4 addresses found in $fileName "
     $ipv4Addresses
 }
