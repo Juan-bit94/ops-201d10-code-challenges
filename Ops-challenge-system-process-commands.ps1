@@ -49,3 +49,23 @@ for ($i = 1; $i -le 10; $i++) {
 # executed ten times. It uses Start-Process cmdlet to initiate a 
 # new process, which is Notepad in this case. 
 # -FilePath parameter specifies the app to run. 
+
+# This closes all notepad windows 
+# uses the Get-Process cmdlet to retrieve a list of all running processes
+# uses Where-Object to filter the list to only include processes named notepad
+# uses ForEach-Object to iterate through the filtered list and calls the CloseMainWindow()
+# method on each notepad process to close them. 
+Get-Process | Where-Object { $_.ProcessName -eq "notepad" } |
+ForEach-Object {
+    $_.CloseMainWindow()
+}
+
+# This asks user to enter a PID to kill
+# usesd Read-Host to prompt user to enter PID
+# created variable $processToKillPID and stored user input.
+$processToKillPID = Read-Host "Enter the PID of the process to kill "
+
+# This kills specified PID
+# use the Stop-Process cmdlet to forcefully terminate the process with the PID provided by user.
+# use -Force parameter to ensure that the process is terminated without prompting for confirmation. 
+Stop-Process -Id $processToKillPID -Force
