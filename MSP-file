@@ -1,10 +1,14 @@
+# Script Name:              MSP-Test-file.ps1
+# Author:                   juan maldonado
+# Date of latest revision:  11/15/2023
+# Purpose:                  Endpoint configuration
+
 # This sets up variables
 $UserName = Read-Host "Enter new username"
 $Password = Read-Host -Prompt "Enter the password for $UserName" -AsSecureString
 $FullName = Read-Host "Enter the full name for $UserName"
 $Description = Read-Host "Enter a description for $UserName"
 $ComputerName = Read-Host "Enter a ComputerName"
-$ISOPath = "C:\Users\Admin01\Desktop\Windows-ISO\Windows-ISO\Windows10.iso" # this is for the source computer, find the path to the windows 10 iso.
 
 
 # This sets up user account
