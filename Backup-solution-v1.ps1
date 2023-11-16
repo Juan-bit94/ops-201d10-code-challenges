@@ -1,4 +1,8 @@
-﻿# This sets up variables
+# This displays your username
+$UserName = $env:USERNAME
+Write-Host "Current username: $Username"
+
+# This sets up variables
 $UserName = Read-Host "Enter the username for the account"
 $BackupPath = "C:\Backups\$UserName"
 
@@ -8,7 +12,7 @@ if (-not(Test-Path $BackupPath -PathType Container)) {
 }
 
 # This copies user files to the backup folder
-Copy-Item -Path "C:\users\$Users\Documents" -Destination $BackupPath -Recurse -Force
+Copy-Item -Path "C:\users\$UserName\Documents" -Destination $BackupPath -Recurse -Force
 
 # This creates a system restore point
 $RestorePointDescription = "Backup for $UserName"
